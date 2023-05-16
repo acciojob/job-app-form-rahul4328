@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 
 <html>
-  <label for="name">Name*</label>
-  <input type="text" id="name" name="name" required>
 
-  <label for="email">Email*</label>
-  <input type="email" id="email" name="email" required>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
 
-  <fieldset>
-    <legend>Gender*</legend>
-    <input type="radio" id="male" name="gender" value="male" required>
-    <label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label>
-    <input type="radio" id="other" name="gender" value="other">
-    <label for="other">Other</label>
-  </fieldset>
+<body>
+	<!-- the entire body must be written by student -->
+<script type="text/javascript" src="./script.js">
+</script>
 
-  <label for="laptop">Laptop Brands*</label>
-  <select id="laptop" name="laptop" required>
-    <option value="">Select a brand</option>
-    <option value="apple">Apple</option>
-    <option value="asus">Asus</option>
-    <option value="hp">HP</option>
-  </select>
 
-  <label for="age">Age*</label>
-  <input type="number" id="age" name="age" required>
+<form method="post">
+    <h1>Job App Form</h1>
+    <div>
+        <label for="name">Name* </label><input type="text" name="name" id="name" required="required">
+    </div>
+    <br>
+    <div>
+        <label for="email">Email* </label><input type="email" name="email" id="email" required="required">
+    </div>
+    <br>
+    <div>
+        <label for="gender">Gender* </label><input type="radio" name="gender" id="gender" value="male" required="required">Male
+        <input type="radio" name="gender" id="gender" value="female" required="required">Female
+    </div>
+    <br>
+    <div>
+        <label for="laptop">Laptop Brands </label>
+        <select id="laptop" name="laptop">
+            <option value="apple">Apple</option>
+            <option value="asus">Asus</option>
+            <option value="hp">HP</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="age">Age* </label><input type="number" name="age" id="age" min="18" max="150" required="required">
+    </div>
+    <br>
+    <div>
+        <label for="dob">DOB* </label><input type="date" name="dob" id="dob" required="required">
+    </div>
+    <br>
+    <div>
+        <label for="password">Password* </label><input type="password" name="password" id="password" required="required">
+    <br>
+    </div>
+    <br>
+    <div>
+        <label for="portfolio">Portfolio </label><input type="url" name="portfolio" id="portfolio">
+    </div>
+    <br>
+    <div>
+        <button type="submit" name="submit" value="Submit">Submit</button>
+    </div>
 
-  <label for="dob">Date of Birth*</label>
-  <input type="date" id="dob" name="dob" required>
+</form>
 
-  <label for="password">Password*</label>
-  <input type="password" id="password" name="password" required>
+</body>
 
-  <button type="submit">Submit</button>
 </html>
